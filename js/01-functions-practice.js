@@ -23,12 +23,18 @@ function findModulus(num1, num2) {
 }
 
 //STEP 5
-
+function addList(numbers) {
+    let base = 0
+    for (let i = 0; i < arguments.length; i++) {
+        base += Number(arguments[i])
+    }
+    console.log(base)
+}
 
 
 //  test functions
 halfNumber(6)
 squareNumber(4)
 percentOf(6, 12)
-percentOf(10, 100)
 findModulus(4, 10)
+addList(1, 5, 5, 20, 100)
