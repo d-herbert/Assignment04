@@ -6,6 +6,7 @@ let num1
 let num2
 let op
 let val
+let rerun
 
 function promptUser() {
     num1 = parseFloat(prompt('enter a number'))
@@ -31,6 +32,7 @@ function performOperation(op, num1, num2) {
     }
     else {
         val = 'try again. you must enter one of the following options: add, subtract, multiply, or divide'
+        rerun = true
     }
     alert(val)
 }
@@ -41,3 +43,8 @@ function main() {
 }
 
 main()
+
+do {
+    main()
+}
+while (rerun == true)
